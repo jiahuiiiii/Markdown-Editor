@@ -8,14 +8,6 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
 const Main = () => {
-  document.addEventListener('drop', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-  });
-  document.addEventListener('dragover', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-  });
   const [content, setContent] = useState('');
   return (
     <div className="w-full h-screen flex">
